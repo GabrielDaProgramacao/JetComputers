@@ -21,8 +21,16 @@ header {
   position: relative; /* Garante que o header fique posicionado corretamente no topo */
   top: 0; /* Fixa o header no topo da tela */
   margin: 0; /* Remove margens negativas ou desnecessárias */
-  padding: 20px 0; /* Dá um bom espaçamento dentro do header */
+  padding: 10px 0; /* Dá um bom espaçamento dentro do header */
   z-index: 10; /* Garante que o header fique por cima de outros elementos */
+}
+
+.division {
+  width: 0.01%;
+  height: 1.75rem;
+  position: relative; /* Garante que o header fique posicionado corretamente no topo */
+
+  background-color: rgb(255, 255, 255);
 }
 
 .main_fundo{
@@ -44,24 +52,36 @@ nav ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 0;
+  padding-top: 8px;
+  margin-bottom: -20px;
+  background: linear-gradient(
+    165deg,
+    hsl(278, 100%, 58%),
+    hsl(278, 100%, 58%)
+  );
 }
 
 nav ul li {
   letter-spacing: 3px;
-  margin-left: 32px;
+
+  padding-top: 2px;
   font-style: italic;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
+  cursor: pointer;
+
 }
 
 .apos {
   text-decoration: none;
   color: white;
+  background-color: hsl(278, 100%, 58%);
+  background-size: 100%;
+  padding: 10px 20px;
 }
 
 .apos:hover {
-  color: #4f46e5;
   transition: 0.5s;
+  background-color: hsl(278, 100%, 50%);
 }
 
 /* configuração de Início */
