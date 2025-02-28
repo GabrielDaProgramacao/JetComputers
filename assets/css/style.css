@@ -5,7 +5,7 @@
 * {
   margin: 0;
   padding: 0;
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   font-family: "Outfit", helvetica;
   box-sizing: border-box;
 }
@@ -14,8 +14,8 @@
 header {
   background: linear-gradient(
     165deg,
-    #18181b,
-    #1c1917
+    hsl(278, 100%, 64%),
+    hsl(278, 100%, 58%)
   ); /* Mantém o fundo gradiente */
   width: 100%;
   position: relative; /* Garante que o header fique posicionado corretamente no topo */
@@ -25,7 +25,14 @@ header {
   z-index: 10; /* Garante que o header fique por cima de outros elementos */
 }
 
+.main_fundo{
+  background-color: rgb(255, 255, 255);
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
 h1 {
+  color: white;
   text-align: center;
   margin-bottom: 20px;
   margin-top: 0; /* Remove margem extra no topo */
@@ -59,11 +66,18 @@ nav ul li {
 
 /* configuração de Início */
 body {
-  background: linear-gradient(90deg, #020617, #1e1b4b);
+  background: #e2e8f0;
 }
 
 #destaque {
-  margin-top: 100px;
+  margin-top: 350px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: linear-gradient(
+    165deg,
+    hsl(278, 100%, 64%),
+    hsl(278, 100%, 58%)
+  );
 }
 
 #computadores_em_destaque {
@@ -134,12 +148,23 @@ body {
   font-size: 18px;
   text-align: center; /* Centraliza o texto quando estiver abaixo da imagem */
 }
-
+#h1_promocoes_mes {
+  margin-top: 350px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: linear-gradient(
+    165deg,
+    hsl(278, 100%, 64%),
+    hsl(278, 100%, 58%)
+  );
+}
 /* configuração de sobre */
 
 #who {
  margin-top: 100px;
+ padding-top: 50px;
  margin-bottom: 30px;
+ color: black;
 }
 
 #imagem_flex{
@@ -148,34 +173,35 @@ body {
 
 #apresentacao {
  letter-spacing: 3px;
- margin-top: 50px;
+ margin-top: 45px;
  font-size: 24px;
- margin-left: 20px;
- margin-right: 400px;
+ margin-left: 50px;
+ margin-right: 25%;
 }
 
 #imagem1 {
  margin-top: 50px;
- margin-left: 280px;
+ margin-left: 110px;
  border-radius: 20px;
 }
 
 #where {
  margin-top: 100px;
+ color: black;
 }
 
 #where_p {
  letter-spacing: 3px;
- margin-left: 280px;
+ margin-left: 30%;
  font-size: 24px;
- margin-right: 280px;
+ margin-right: 30%;
  text-align: center;
  margin-top: 50px;
 }
 
 #mapa {
  margin-top: 50px;
- margin-left: 620px;
+ margin-left: 30%;
 }
 
 #contatos {
